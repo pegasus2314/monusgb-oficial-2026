@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Anton, Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
-
+import { AuthProvider } from '@/lib/auth.tsx'
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
