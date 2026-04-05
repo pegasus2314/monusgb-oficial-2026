@@ -1,41 +1,29 @@
-"use client"
+import { createContext, useContext, useState, useCallback, ReactNode } from 'react'
 
-import { createContext, useContext, useState, useEffect, useCallback, type ReactNode } from "react"
+const AUTH_KEY = 'auth_token'
+const VALID_USER = 'admin'
+const VALID_PASS = '12345'
 
-interface AuthContextValue {
+interface AuthContextType {
   isAuthenticated: boolean
-  login: (username: string, password: string) => boolean
+  login: (u: string, p: string) => boolean
   logout: () => void
 }
 
-const AuthContext = createContext<AuthContextValue | null>(null)
-
-const AUTH_KEY = "monusgb_auth_session"
-const VALID_USER = "SABANA"
-const VALID_PASS = "SABANA"
+const AuthContext = createContext<AuthContextType | undefined>(undefined)
 
 export function AuthProvider({ children }: { children: ReactNode }) {
-  const [isAuthenticated, setIsAuthenticated] = useState(false)
-
-  useEffect(() => {
-    try {
-      const stored = localStorage.getItem(AUTH_KEY)
-      if (stored === "true") {
-        setIsAuthenticated(true)
-      }
-    } catch {
-      // ignore
+  const [isAuthenticated, setIsAuthenticated] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem(AUTH_KEY) === 'true'
     }
-  }, [])
+    return false
+  })
 
   const login = useCallback((username: string, password: string): boolean => {
     if (username === VALID_USER && password === VALID_PASS) {
       setIsAuthenticated(true)
-      try {
-        localStorage.setItem(AUTH_KEY, "true")
-      } catch {
-        // ignore
-      }
+      localStorage.setItem(AUTH_KEY, 'true')
       return true
     }
     return false
@@ -43,11 +31,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const logout = useCallback(() => {
     setIsAuthenticated(false)
-    try {
-      localStorage.removeItem(AUTH_KEY)
-    } catch {
-      // ignore
-    }
+    localStorage.removeItem(AUTH_KEY)
   }, [])
 
   return (
