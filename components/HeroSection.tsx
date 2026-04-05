@@ -115,7 +115,7 @@ export default function HeroSection({ heroStats }: Props) {
           }`}
           style={{ transitionDelay: "0.6s" }}
         >
-          La experiencia diplomática más grande del SENA. Jóvenes líderes debatiendo los grandes desafíos del mundo en comisiones de la Organización de Naciones Unidas.
+          "Modelo de las Naciones Unidas del Distrito 17-04. Un espacio donde la juventud alza su voz para debatir los grandes desafíos mundiales y construir soluciones colectivas."
         </p>
 
         {/* CTA Buttons */}
