@@ -36,9 +36,9 @@ export default function Footer() {
           <div>
             <h4 className="font-display text-foreground tracking-widest text-sm mb-4">CONTACTO</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <licelider1704@gmail.com</li>
+              <li>celider1704@gmail.com</li>
               <li>SABANA GRANDE DE BOYA , MONTEPLATA</li>
-              <li>15 — 28 de ABRIL, 2026</li>
+              <li>28 de ABRIL, 2026</li>
             </ul>
           </div>
         </div>
