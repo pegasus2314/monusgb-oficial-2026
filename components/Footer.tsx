@@ -36,16 +36,16 @@ export default function Footer() {
           <div>
             <h4 className="font-display text-foreground tracking-widest text-sm mb-4">CONTACTO</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>monusgb2026@sena.edu.co</li>
-              <li>Bogotá D.C., Colombia</li>
-              <li>15 — 16 de Agosto, 2026</li>
+              <licelider1704@gmail.com</li>
+              <li>SABANA GRANDE DE BOYA , MONTEPLATA</li>
+              <li>15 — 28 de ABRIL, 2026</li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-primary/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-2">
           <p className="text-xs text-muted-foreground">
-            © 2026 MONUSGB — Servicio Nacional de Aprendizaje SENA. Todos los derechos reservados.
+            © 2026 MONUSGB — ESTA PAGINA WEB ESTA ECHA POR ALBERT SILVESTRE REGIONAL 17.
           </p>
           <a href="/admin" className="text-xs text-primary hover:neon-text transition-colors">
             Panel de Administración →
