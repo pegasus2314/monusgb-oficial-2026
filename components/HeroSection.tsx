@@ -77,7 +77,7 @@ export default function HeroSection({ heroStats }: Props) {
           }`}
           style={{ transitionDelay: "0.1s" }}
         >
-          Servicio Nacional de Aprendizaje · SENA
+         CELIDER 17 · 
         </p>
 
         {/* Main title with glitch */}
