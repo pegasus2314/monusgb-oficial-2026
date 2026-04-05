@@ -1,12 +1,12 @@
 "use client"
 
 import { useState } from "react"
-import { useSiteData } from "@/lib/store"
-import AdminDelegates from "@/components/admin/AdminDelegates"
-import AdminCommittees from "@/components/admin/AdminCommittees"
-import AdminTimeline from "@/components/admin/AdminTimeline"
-import AdminSecretariat from "@/components/admin/AdminSecretariat"
-import AdminSettings from "@/components/admin/AdminSettings"
+import { useSiteData } from '../../lib/store'
+import AdminDelegates from '../../components/admin/AdminDelegates'
+import AdminCommittees from '../../components/admin/AdminCommittees'
+import AdminTimeline from '../../components/admin/AdminTimeline'
+import AdminSecretariat from '../../components/admin/AdminSecretariat'
+import AdminSettings from '../../components/admin/AdminSettings'
 import {
   Users,
   Globe2,
