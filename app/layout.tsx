@@ -34,12 +34,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  return (
-    <html lang="es" className={`${inter.variable} ${anton.variable}`}>
-      <body className="font-sans antialiased">
+ return (
+  <html lang="es" className={`${inter.variable} ${anton.variable}`}>
+    <body className="font-sans antialiased">
+      <AuthProvider> 
         {children}
         <Analytics />
-      </body>
-    </html>
-  )
-}
+      </AuthProvider>
+    </body>
+  </html>
+)
