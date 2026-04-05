@@ -13,7 +13,7 @@ export default function Footer() {
               <span className="font-display text-primary tracking-widest">MONUSGB 2026</span>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Modelo Distrital de Naciones Unidas. Una iniciativa del SENA para el desarrollo de competencias diplomáticas y ciudadanas.
+              Modelo Distrital de Naciones Unidas. SABANA GRANDE DE BOYA.
             </p>
           </div>
 
